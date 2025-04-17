@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amani Kahua</title>
+  </head>
+  <!-- Styling -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #f7b7a3;
+      color: #333333;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    /* Header Styling */
+    header {
+      background-color: #800020;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid#f7b7a3;
+      color: #ffff;
+      font-size: 3em;
+    }
+    /* Navbar Styling */
+    nav {
+      background-color: #006d61;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f7b7a3;
+    }
+    /* Main Content Area Styling */
+    main {
+      max-width: 80%;
+      margin: auto;
+      padding: 30px 20px;
+      background: #f4f1e1;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px #d4af37;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      border-bottom: 2px solid#d4af37;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Work section styling */
+    /* Carousel Container */
+    .carousel {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* Hide radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Carousel Slides */
+    .carousel-slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 500px;
+    }
+
+    /* Navigation Dots */
+    .carousel-navigation {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .carousel-navigation label {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-navigation label:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Show selected slide */
+    #slide1:checked ~ .carousel-slides {
+      transform: translateX(0%);
+    }
+
+    #slide2:checked ~ .carousel-slides {
+      transform: translateX(-100%);
+    }
+
+    #slide3:checked ~ .carousel-slides {
+      transform: translateX(-200%);
+    }
+
+    /* Change dot color when selected */
+    #slide1:checked ~ .carousel-navigation label:nth-child(1) {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    #slide2:checked ~ .carousel-navigation label:nth-child(2) {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    #slide3:checked ~ .carousel-navigation label:nth-child(3) {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    .carousel {
+      animation: slideAuto 15s infinite;
+    }
+
+    /* Education Table Style */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid#d4af37;
+    }
+    th td {
+      padding: 10px;
+      text-align: left;
+    }
+    /* Conctact Form Styling */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid#d4af37;
+      border-radius: 8px;
+    }
+    form button {
+      background-color: #800020;
+      color: #ffff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+    }
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333333;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Amani Kahua</h1>
+    </header>
+    <!-- Navbar -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- Main Content Section -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Amani Kahua is a globally celebrated, architect, urban planner and
+          muralist whose work spans across disciplines. Her work lives at the
+          intersection of built environment and human rights. She transforms
+          cities through creativity and justice. She believes cities aren't just
+          part of the built environment, they are lived and shared. They impact
+          the quality of our lives. She designs for a future where space belongs
+          to everyone.
+        </p>
+        <blockquote>
+          "I design cities that center care." <cite>Kahua</cite>
+        </blockquote>
+        <p>
+          Her murals have adorned streets from Nairobi to Berlin. Her work
+          centers people, especially those often erased from the urabn
+          narrative.
+        </p>
+        <blockquote>
+          "I paint stories of resistance on their walls." <cite>Kahua</cite>
+        </blockquote>
+        <p>
+          She has been a fierce advocate for housing justice. An SDG ambassador
+          for Goal 11- SUstainable Cities, with a focus on SDG
+          intersectionality. She has developed a language access toolit for
+          participatory planning processes.
+        </p>
+        <blockquote>
+          "No justice wihtout beauty. No beauty without justice."
+          <cite>Kahua</cite>
+        </blockquote>
+        <p>
+          One of the people who have inspired her throughout her work is nobel
+          peace price laureate Wangari Mathaai
+        </p>
+        <b>I will be a hummingbird</b><br />
+        <!-- Audio snippett -->
+        <audio
+          controls
+          src="audio/I will be a hummingbird - Wangari Maathai (English).mp3"
+        >
+          Audio not supported
+        </audio>
+      </section>
+      <!-- Work Section -->
+      <section id="work">
+        <h2>Work</h2>
+        <p><b>Some of her best known work include:</b></p>
+        <div class="carousel">
+          <!-- Hidden Radio Buttons for Image Switching -->
+          <input type="radio" name="carousel" id="slide1" checked />
+          <input type="radio" name="carousel" id="slide2" />
+          <input type="radio" name="carousel" id="slide3" />
+
+          <!-- Carousel Slides -->
+          <div class="carousel-slides">
+            <div class="carousel-slide">
+              <img
+                src="images/Animated Architecture Sketch and Blueprint Photoshop Action.jpeg"
+                alt="Blueprint"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="images/Love for all mural.jpeg"
+                alt="Love for all mural"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/Render.jpeg" alt="Redesigned walkway" />
+            </div>
+          </div>
+          <!-- Navigation Dots -->
+          <div class="carousel-navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XvKpnRPosek?si=6tKXeASni4OnuLH1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <!-- Resume Section -->
+      <section id="resume">
+        <h2>Resume</h2>
+        <!-- Work Experience -->
+        <h3>Experience</h3>
+        <b>Legal Aid Advocate</b> <br />
+        <b>2022-Present</b>
+        <ul>
+          <li>
+            Focus: housing rights, gender-based eviction, urban legal literacy
+          </li>
+          <li>
+            Worked with SOGIESEC individuals facing displacemnt and
+            discrimination
+          </li>
+        </ul>
+        <b>Co-Founder | ARCHER </b> <br />
+        <b>2019-Present</b>
+        <ul>
+          <li>
+            Led large-scale urban regeneration projectsin Medellin, Nairobi and
+            Bangkok
+          </li>
+          <li>
+            Developed design frameworks rooted in accesibility, queer rights and
+            environmental resilience
+          </li>
+          <li>
+            Consulted for the UN on spatial political reform in post-conflict
+            urban areas
+          </li>
+        </ul>
+        <b>Muralist</b> <br />
+        <b>2015-Present</b>
+        <ul>
+          <li>Over 40 permanent and temporary murals across 5 continets</li>
+          <li>
+            Creator of the "City as Canvas" project - mural installations in
+            marginalized communities
+          </li>
+        </ul>
+        <b>Cultural Envoy | United Nation Delegation (Afghanistan)</b> <br />
+        <b>2020-2022</b>
+        <ul>
+          <li>Built cross-cultural coalitions through art diplomacy</li>
+          <li>Advocated for women's rights in urban development policy</li>
+        </ul>
+        <!-- Education -->
+        <h3>Education</h3>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Place</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>2019-2020</td>
+            <td>University of Doha</td>
+            <td>Diploma in Sematic Languages</td>
+          </tr>
+          <tr>
+            <td>2019-2020</td>
+            <td>Harvard Kennedy School</td>
+            <td>Master in Public Policy</td>
+          </tr>
+          <tr>
+            <td>2017-2018</td>
+            <td>Cambridge University</td>
+            <td>Master in Urban Planning</td>
+          </tr>
+          <tr>
+            <td>2012-2016</td>
+            <td>University of Cape Town</td>
+            <td>Bachelor of Architecture</td>
+          </tr>
+        </table>
+      </section>
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+
+          <!-- submit button -->
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <section id="Footer">
+      <footer>
+        <p>Amani Kahua | © 2025 | Let's build cities worth dreaming in.</p>
+      </footer>
+    </section>
+  </body>
+</html>
